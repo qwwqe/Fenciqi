@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:bind="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <data>
+        <variable name="cardText" type="java.lang.String"/>
+        <variable name="cardTitle" type="java.lang.String"/>
+        <variable name="cardBackground" type="android.graphics.drawable.Drawable" />
+        <variable name="cardIcon" type="android.graphics.drawable.Drawable" />
+    </data>
+
+
+    <android.support.v4.widget.DrawerLayout
+        android:id="@+id/drawer_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true">
+
+        <LinearLayout
+            android:id="@+id/content_frame"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="@color/main_background">
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/main_toolbar"
+                app:title="@string/app_name"
+                app:titleTextColor="@color/whiteText"
+                android:layout_width="match_parent"
+                android:layout_height="?android:attr/actionBarSize"
+                android:background="@color/colorPrimary"
+                android:elevation="4dp"
+                android:theme="@style/ThemeOverlay.AppCompat.ActionBar" />
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:padding="10dp"
+                android:gravity="center">
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:clipToPadding="false"
+                    android:gravity="center">
+                    <include layout="@layout/card_main"
+                        android:id="@+id/browse_card"
+                        bind:cardTitle="@{@string/browse_card_title}"
+                        bind:cardText="@{@string/browse_card_desc}"
+                        bind:cardIcon="@{@drawable/ic_browse}"
+                        bind:cardBackground="@{@drawable/circle_blue}"
+                        />
+                    <include layout="@layout/card_main"
+                        android:id="@+id/search_card"
+                        bind:cardTitle="@{@string/search_card_title}"
+                        bind:cardText="@{@string/search_card_desc}"
+                        bind:cardIcon="@{@drawable/ic_search}"
+                        bind:cardBackground="@{@drawable/circle_pink}"
+                        />
+                </LinearLayout>
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:clipToPadding="false"
+                    android:gravity="center">
+                    <include layout="@layout/card_main"
+                        android:id="@+id/match_card"
+                        bind:cardTitle="@{@string/match_card_title}"
+                        bind:cardText="@{@string/match_card_desc}"
+                        bind:cardIcon="@{@drawable/ic_match}"
+                        bind:cardBackground="@{@drawable/circle_yellow}"
+                        />
+                    <include layout="@layout/card_main"
+                        android:id="@+id/add_card"
+                        bind:cardTitle="@{@string/add_card_title}"
+                        bind:cardText="@{@string/add_card_desc}"
+                        bind:cardIcon="@{@drawable/ic_add}"
+                        bind:cardBackground="@{@drawable/circle_green}"
+                        />
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <android.support.design.widget.NavigationView
+            android:id="@+id/nav_view"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            android:fitsSystemWindows="true" />
+    </android.support.v4.widget.DrawerLayout>
+</layout>

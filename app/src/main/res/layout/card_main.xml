@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+    <data>
+        <variable name="cardText" type="java.lang.String"/>
+        <variable name="cardTitle" type="java.lang.String"/>
+        <variable name="cardBackground" type="android.graphics.drawable.Drawable" />
+        <variable name="cardIcon" type="android.graphics.drawable.Drawable" />
+    </data>
+
+    <android.support.v7.widget.CardView
+        android:layout_height="160dp"
+        android:layout_width="120dp"
+        android:layout_margin="10dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:background="?android:attr/selectableItemBackground">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center">
+            <ImageView
+                android:layout_width="56dp"
+                android:layout_height="56dp"
+                android:background="@{cardBackground}"
+                android:src="@{cardIcon}"
+                android:layout_marginTop="10dp"
+                android:padding="10dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:textSize="25sp"
+                android:text="@{cardTitle}"/>
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:background="@color/lightgray"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:padding="5dp"
+                android:textColor="@color/darkgray"
+                android:text="@{cardText}"/>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+</layout>

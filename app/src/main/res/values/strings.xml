@@ -1,0 +1,46 @@
+<resources>
+    <string name="app_name">Fenciqi</string>
+
+    <!-- MainActivity -->
+    <string name="browse_card_title">讀</string>
+    <string name="browse_card_desc">翻看你程度的閱讀資料</string>
+    <string name="search_card_title">尋</string>
+    <string name="search_card_desc">尋找單字與文法的例子</string>
+    <string name="match_card_title">配</string>
+    <string name="match_card_desc">分析常見的搭配</string>
+    <string name="add_card_title">加</string>
+    <string name="add_card_desc">新增更多文章、詞彙與詞典</string>
+
+    <!-- OrganizeDocumentsActivity -->
+    <string name="organize_documents_title">管理文件</string>
+    <string name="articles_card_title">文章</string>
+    <string name="articles_card_desc">你的閱讀資料。越多越好！</string>
+    <string name="wordlists_card_title">詞彙</string>
+    <string name="wordlists_card_desc">你的詞彙目錄。隨着自己的學習進步來新增生詞，或者附加其他目錄藉以分析對比！</string>
+    <string name="dictionaries_card_title">詞典</string>
+    <string name="dictionaries_card_desc">分詞器用於分析文章的詞典。詞條愈廣泛分析愈精確！</string>
+
+    <!-- OrganizeVocabularyActivity -->
+    <string name="organize_vocabulary_title">管理詞彙</string>
+    <string name="no_vocabulary_message">沒有詞彙本</string>
+    <string name="new_vocabulary">新增詞彙本</string>
+    <string name="new_vocabulary_dialog_title">新增詞彙本</string>
+    <string name="new_vocabulary_name_hint">新詞彙本</string>
+    <string name="new_vocabulary_name_label">典名</string>
+    <string name="new_vocabulary_count_label">詞數</string>
+    <string name="delete_vocabulary">刪除詞典</string>
+
+    <!-- OrganizeDictionaryActivity -->
+    <string name="organize_dictionary_title">管理詞典</string>
+    <string name="no_dictionary_message">沒有詞典</string>
+    <string name="new_dictionary">新增詞典</string>
+    <string name="new_dictionary_dialog_title">新增詞典</string>
+    <string name="new_dictionary_name_hint">新詞典</string>
+    <string name="new_dictionary_name_label">典名</string>
+    <string name="new_dictionary_count_label">詞數</string>
+    <string name="delete_dictionary">刪除詞典</string>
+
+    <!-- Miscellaneous -->
+    <string name="confirm">確定</string>
+    <string name="cancel">取消</string>
+</resources>
