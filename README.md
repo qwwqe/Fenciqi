@@ -1,5 +1,7 @@
 # Fenciqi
-Streamline textual language study workflow. This is part of a larger project I'm working on for my personal language studies. The idea is to tokenize large volumes of target-language text, quantify the difficulty and domain of the texts, and provide catered content suitable to the user's language abilities and demands. Ideally, this catered content doubly serves as extensive reading material (98% comprehension) and contextual vocabulary review. At the moment, the bulk of progress on this work has been made in private - I've yet to put everything together and re-host it on github.
+Streamline textual language study workflow. This is part of a larger project I'm working on for my personal language studies. The idea is to tokenize large volumes of target-language text, quantify the difficulty and domain of the texts, and provide catered content suitable to the user's language abilities and demands. Ideally, this catered content doubly serves as extensive reading material (98% comprehension) and contextual vocabulary review. 
+
+At the moment, the bulk of progress on this work has been made in private, customized for my specific study needs - I've yet to put everything together and re-host it on github. This project will very likely re-manifest as a cloud-backed Flutter app, hopefully in the near future.
 
 # Tokenizing
 The tokenizing algorithm present in this code can be used in conjunction with an arbitrary lexicon to tokenize arbitrary text. This being the case, however, it is designed specifically with Mandarin text in mind, and therefore the heuristics employed in the tokenization process will likely have little efficacy applied to other languages.
